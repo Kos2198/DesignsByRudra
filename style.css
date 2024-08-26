@@ -519,7 +519,7 @@ nav ul li a {
 @media (max-width: 768px) {
     #home {
         background-image: url('DESIGNS.jpg'); /* Use a mobile-specific image */
-        background-size: contain;
+        background-size: 1400px 1024px;
         background-position: top center;
         height: auto;
     
