@@ -545,6 +545,14 @@ nav ul li a {
     }
 }
 
+}/* Desktop and larger screens */
+#home {
+    background-image: url('DESIGNS BY RUDRA (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
 }/* Mobile Background Image Styling */
 @media (max-width: 768px) {
     #home {
