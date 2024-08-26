@@ -515,12 +515,49 @@ nav ul li a {
         margin: 4px 0;
         transition: all 0.3s ease;
     }
-}/* Mobile Background Image Styling */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .service-item {
+        flex: 1 1 100%; /* Each item takes full width */
+        max-width: 100%; /* Ensure full width */
+    }
+
+    #services h2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .overlay h3 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .overlay p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    .arrow-container {
+        display: none; /* Hide arrows if not needed */
+    }
+}
+/* General Background Image Styling */
+#home {
+    background-image: url('DESIGNS.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Mobile Background Image Styling */
 @media (max-width: 768px) {
     #home {
-        background-image: url('DESIGNS.jpg'); /* Use a mobile-specific image */
-        background-size: contain;
-        background-position: top center;
-        height: auto;
-    
+        background-size: contain; /* Adjust to fit the image within the viewport */
+        background-position: top; /* Align the background image to the top */
+        height: auto; /* Adjust the height based on content */
+    }
 }
