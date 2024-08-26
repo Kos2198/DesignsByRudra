@@ -14,12 +14,22 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #666679a7;
-    background-image: url('DESIGNS\ BY\ RUDRA\ \(1\).jpg');
+    background-image: url('DESIGNS BY RUDRA(1).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-
+/* Mobile-specific Background */
+@media (max-width: 768px) {
+    #home {
+        background-image: url('DESIGNS.jpg'); /* URL for the mobile version */
+        background-size: cover; /* Ensure the image covers the mobile screen */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 750px; /* Adjust height based on content */
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -545,23 +555,7 @@ nav ul li a {
     }
 }
 
-}/* Desktop and larger screens */
-#home {
-    background-image: url('DESIGNS BY RUDRA (1).jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    height: 100vh;
-}/* Mobile Background Image Styling */
-@media (max-width: 768px) {
-    #home {
-        background-image: url('DESIGNS.jpg'); /* Use a mobile-specific image */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-        height: 750px;
+}
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -583,6 +577,6 @@ nav ul li a {
     border-radius: 8px;
 }
 
-    }
-}
+    
+
     
