@@ -544,21 +544,36 @@ nav ul li a {
         display: none; /* Hide arrows if not needed */
     }
 }
-/* General Background Image Styling */
-#home {
-    background-image: url('DESIGNS.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
 /* Mobile Background Image Styling */
 @media (max-width: 768px) {
     #home {
-        background-size: contain; /* Adjust to fit the image within the viewport */
+        background-image: url('DESIGNS.jpg'); /* Use a mobile-specific image */
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: top; /* Align the background image to the top */
-        height: 700px; /* Adjust the height based on content */
+        background-position: top center;
+        background-attachment: fixed;
+        height: 750px;
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0; /* Space between items */
+}
+
+.service-item {
+    flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+}
+
     }
 }
+    
