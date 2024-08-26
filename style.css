@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #666679a7;
-    background-image: url('DESIGNS BY RUDRA(1).jpg');
+    background-image: url('DESIGNS BY RUDRA (1).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,6 +30,28 @@ body {
         height: 750px; /* Adjust height based on content */
     }
 }
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0; /* Space between items */
+}
+
+.service-item {
+    flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -555,28 +577,6 @@ nav ul li a {
     }
 }
 
-}
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 0; /* Space between items */
-}
-
-.service-item {
-    flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
-    max-width: calc(33.333% - 40px);
-    box-sizing: border-box;
-    position: relative;
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 8px;
-}
-
     
-
+}
     
