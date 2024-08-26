@@ -557,7 +557,8 @@ nav ul li a {
 @media (max-width: 768px) {
     #home {
         background-size: contain; /* Adjust to fit the image within the viewport */
+        background-repeat: no-repeat;
         background-position: top; /* Align the background image to the top */
-        height: auto; /* Adjust the height based on content */
+        height: 700px; /* Adjust the height based on content */
     }
 }
